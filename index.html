@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi Yonan Fadhilah M R — Mahasiswa Teknik Informatika yang berfokus pada pengembangan web dan desain UI/UX.">
+  <title>Yonan Fadhilah M R — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+ 
+  <!-- ── HEADER ── -->
+  <header>
+    <a href="index.html" class="header__logo" aria-label="Kembali ke halaman utama">Y<span>.</span>Fadhilah</a>
+ 
+    <button class="nav__toggle" aria-label="Buka navigasi" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+ 
+    <nav id="main-nav" aria-label="Navigasi utama">
+      <a href="index.html"      class="nav__link active">Beranda</a>
+      <a href="portofolio.html"  class="nav__link">Portofolio</a>
+      <a href="contact.html"    class="nav__link">Kontak</a>
+    </nav>
+  </header>
+ 
+  <!-- ── MAIN ── -->
+  <main>
+ 
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Perkenalan">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Tersedia untuk proyek baru</p>
+        <h1 class="hero__name">
+          Yonan<br><em>Fadhilah M R</em>
+        </h1>
+        <p class="hero__tagline">
+          Mahasiswa Teknik Informatika yang bersemangat membangun
+          pengalaman digital yang bermakna — dari kode yang rapi
+          hingga antarmuka yang intuitif.
+        </p>
+        <div class="hero__cta">
+          <a href="portfolio.html" class="btn btn--primary">Lihat Portofolio</a>
+          <a href="contact.html"   class="btn btn--outline">Hubungi Saya</a>
+        </div>
+      </div>
+ 
+      <div class="hero__visual">
+        <div class="hero__photo-frame">
+          <img class="hero__photo" src="foto-profil.jpeg" alt="Foto profil Yonan Fadhilah M R">
+        </div>
+      </div>
+    </section>
+ 
+    <!-- About Strip -->
+    <section class="about-strip" aria-label="Tentang saya">
+      <div>
+        <p class="section-label">Tentang Saya</p>
+      </div>
+      <div class="about__body">
+        <h2 class="about__heading">
+          Membangun solusi digital<br>dengan presisi &amp; kreativitas
+        </h2>
+        <p>
+          Saya adalah mahasiswa semester 4 Teknik Informatika yang memiliki ketertarikan mendalam
+          pada pengembangan web, desain antarmuka, dan pemecahan masalah berbasis data. Saya percaya
+          bahwa teknologi yang baik adalah teknologi yang terasa alami bagi penggunanya.
+        </p>
+        <p>
+          Di luar perkuliahan, saya aktif mengerjakan proyek sampingan, berkontribusi pada komunitas
+          open-source lokal, dan terus mengeksplorasi tren teknologi terkini.
+        </p>
+ 
+        <div class="skills-grid" aria-label="Keahlian teknis">
+          <span class="skill-tag">HTML &amp; CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">UI/UX Design</span>
+          <span class="skill-tag">REST API</span>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer__copy">&copy; 2026 Yonan Fadhilah M R. Dibuat dengan ❤ dan kopi.</p>
+    <nav class="footer__links" aria-label="Tautan sosial">
+      <a href="https://github.com"    class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com"  class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="contact.html"          class="footer__link">Kontak</a>
+    </nav>
+  </footer>
+ 
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('main-nav');
+      const isOpen = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+  </script>
+</body>
+</html>
+ 

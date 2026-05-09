@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kumpulan proyek dan pengalaman Yonan Fadhilah M R dalam pengembangan web, desain UI/UX, dan teknologi informasi.">
+  <title>Portofolio — Yonan Fadhilah M R</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+ 
+  <!-- ── HEADER ── -->
+  <header>
+    <a href="index.html" class="header__logo" aria-label="Kembali ke halaman utama">R<span>.</span>Pratama</a>
+ 
+    <button class="nav__toggle" aria-label="Buka navigasi" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+ 
+    <nav id="main-nav" aria-label="Navigasi utama">
+      <a href="index.html"      class="nav__link">Beranda</a>
+      <a href="portfolio.html"  class="nav__link active">Portofolio</a>
+      <a href="contact.html"    class="nav__link">Kontak</a>
+    </nav>
+  </header>
+ 
+  <!-- ── MAIN ── -->
+  <main>
+ 
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Judul halaman portofolio">
+      <p class="page-hero__kicker">Karya &amp; Proyek</p>
+      <h1 class="page-hero__title">
+        Dari ide menjadi<br><em>produk nyata</em>
+      </h1>
+    </section>
+ 
+    <!-- Filter -->
+    <div class="portfolio-filter" role="group" aria-label="Filter kategori proyek">
+      <button class="filter-btn active" aria-pressed="true">Semua</button>
+      <button class="filter-btn" aria-pressed="false">Web Dev</button>
+      <button class="filter-btn" aria-pressed="false">UI/UX</button>
+      <button class="filter-btn" aria-pressed="false">Data</button>
+      <button class="filter-btn" aria-pressed="false">Open Source</button>
+    </div>
+ 
+    <!-- Projects Grid -->
+    <section class="projects-grid" aria-label="Daftar proyek">
+ 
+      <!-- Project 1 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">01</span>
+        <div class="project-card__tags">
+          <span class="tag">Web Dev</span>
+          <span class="tag">React</span>
+        </div>
+        <h2 class="project-card__title">
+          Platform E-Commerce Lokal — TokoKita
+        </h2>
+        <p class="project-card__desc">
+          Aplikasi web belanja online untuk UMKM lokal dengan fitur manajemen produk,
+          keranjang belanja real-time, dan integrasi pembayaran QRIS.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2026</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+      <!-- Project 2 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">02</span>
+        <div class="project-card__tags">
+          <span class="tag">UI/UX</span>
+          <span class="tag">Figma</span>
+        </div>
+        <h2 class="project-card__title">
+          Redesain Aplikasi Kesehatan — MediTrack
+        </h2>
+        <p class="project-card__desc">
+          Proyek redesain aplikasi pemantau kesehatan pribadi dengan fokus pada
+          aksesibilitas, hierarki visual, dan kemudahan navigasi lansia.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2025</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+      <!-- Project 3 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">03</span>
+        <div class="project-card__tags">
+          <span class="tag">Data</span>
+          <span class="tag">Python</span>
+        </div>
+        <h2 class="project-card__title">
+          Analisis Sentimen Media Sosial
+        </h2>
+        <p class="project-card__desc">
+          Model NLP berbasis BERT untuk menganalisis sentimen komentar Twitter
+          terkait isu lingkungan hidup di Indonesia dengan akurasi 91%.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2025</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+      <!-- Project 4 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">04</span>
+        <div class="project-card__tags">
+          <span class="tag">Web Dev</span>
+          <span class="tag">Node.js</span>
+        </div>
+        <h2 class="project-card__title">
+          Sistem Manajemen Tugas Mahasiswa
+        </h2>
+        <p class="project-card__desc">
+          Aplikasi to-do list kolaboratif dengan fitur grup per matakuliah,
+          deadline reminder, dan sinkronisasi kalender Google.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2025</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+      <!-- Project 5 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">05</span>
+        <div class="project-card__tags">
+          <span class="tag">Open Source</span>
+          <span class="tag">CSS</span>
+        </div>
+        <h2 class="project-card__title">
+          Library Komponen UI — NusantaraUI
+        </h2>
+        <p class="project-card__desc">
+          Proyek open-source library komponen UI berbahasa Indonesia dengan
+          dokumentasi lengkap, tema gelap/terang, dan aksesibilitas WCAG 2.1.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2024</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+      <!-- Project 6 -->
+      <article class="project-card">
+        <span class="project-card__number" aria-hidden="true">06</span>
+        <div class="project-card__tags">
+          <span class="tag">UI/UX</span>
+          <span class="tag">Web Dev</span>
+        </div>
+        <h2 class="project-card__title">
+          Dashboard Monitoring Kualitas Udara Kota
+        </h2>
+        <p class="project-card__desc">
+          Dashboard berbasis data real-time dari sensor IoT untuk memantau
+          indeks kualitas udara kota Surakarta dengan visualisasi interaktif.
+        </p>
+        <div class="project-card__footer">
+          <span class="project-card__year">2024</span>
+          <span class="project-card__arrow" aria-hidden="true">↗</span>
+        </div>
+      </article>
+ 
+    </section>
+  </main>
+ 
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer__copy">&copy; 2026 Yonan Fadhilah M R. Dibuat dengan ❤ dan kopi.</p>
+    <nav class="footer__links" aria-label="Tautan sosial">
+      <a href="https://github.com"    class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com"  class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="contact.html"          class="footer__link">Kontak</a>
+    </nav>
+  </footer>
+ 
+  <script>
+    function toggleNav(btn) {
+      const nav = document.getElementById('main-nav');
+      const isOpen = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+ 
+    // Filter button interaction
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+      });
+    });
+  </script>
+</body>
+</html>
+ 
